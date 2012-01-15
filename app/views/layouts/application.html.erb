@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Grabcad Books Library</title>
+		<%= stylesheet_link_tag    "application" %>
+		<%= javascript_include_tag "application" %>
+		<%= csrf_meta_tags %>
+	</head>
+	<header>
+		<nav class="main">
+			<div class="logo">
+				<a href="http://grabcad.com"> <img src="http://grabcad.com/images/_/gc-logo.png" alt="To GrabCAD.com home"> </a>
+			</div>
+			<ul class="menu">
+				<li>
+					<a href="http://grabcad.com/home">Home</a>
+				</li>
+				<li class="selected">
+					<a href="http://grabcad.com/library">Library</a>
+				</li>
+				<li>
+					<a href="http://grabcad.com/challenges">Challenges</a>
+				</li>
+				<li>
+					<a href="http://grabcad.com/questions">Q&amp;A</a>
+				</li>
+				<li>
+					<a href="http://grabcad.com/engineers">Engineers</a>
+				</li>
+				<li>
+					<a href="http://blog.grabcad.com">Blog</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<body class="gcml">
+		<%= yield %>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>Books library - All books</title>
+	</head>
+	<body>
+		<h1>Books library - All books</h1>
+		<div class="book_search">
+			<form method="get" action="/library/search" accept-charset="UTF-8">
+				<div class="search book_search">
+					<input type="text" size="30" placeholder="Search" name="query" id="searchField" class="searchField">
+					<button type="submit" class="search"></button>
+				</div>
+			</form>
+		</div>
+		<div id="books_table">
+			<ul class="books_list">
+				<% @books.each do |book| %>
+				<li class="book_list_item">
+					<div id="book_block">
+						<img src="<%= book.image_url%>" >
+						<span class="book_title"><%= book.title %></span>
+						<span class="book_author"><%= book.author %></span>
+						<span class="book_description"><%= book.description %></span>
+					</div>
+				</li>
+				<% end%>
+			</ul>
+		</div>
+	</body>
+</html>

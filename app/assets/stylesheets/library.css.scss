@@ -1,0 +1,179 @@
+// Place all the styles related to the Library controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#body {
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+
+.gcml {
+    clear: both;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 960px;
+}
+
+.book_search button {
+    background: url("http://grabcad.com/images/_/icon-search-12x12.png") no-repeat scroll 3px 1px transparent;
+    border: medium none;
+    height: 16px;
+    position: absolute;
+    right: 6px;
+    top: 5px;
+    width: 16px;
+}
+
+
+.book_search input {
+    border: 1px solid #222222;
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 0 0 4px #222222 inset;
+    color: #BBBBBB;
+    font-size: 11px;
+    height: 22px;
+    line-height: 12px;
+    width: 140px;
+}
+
+.book_search {
+    float: left;
+    margin-left: 0px;
+    margin-top: 12px;
+    padding: 0;
+    position: relative;
+}
+
+#books_table {
+  clear: left;
+  float: left;
+}
+
+#search_result_header {
+  margin-top: 10px;
+}
+
+.books_list {
+  float: left;
+  padding-left: 0px;  
+}
+.book_list_item {
+    list-style: none outside none;
+    float: left;
+    padding: 0px;
+    width: 300px;    
+}
+
+#book_block {
+    color: #808080;
+    float: center;
+    font-size: 11px;
+    line-height: 16px;
+    width: 280px;    
+}
+
+.book_title {
+      display: block;
+    height: 16px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.book_author {
+      display: block;
+    height: 16px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.book_description {
+      display: block;
+    height: 16px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+// Grabcad site styles - Start
+
+header {
+    background: url("http://grabcad.com/images/_/header-back.png") repeat-x scroll 0 0 #3D3D3D;
+    height: 50px;  
+}
+
+header .logo img {
+    height: 20px;
+    width: 115px;
+    display: block;
+}
+
+header .logo a {
+    display: inline-block;
+    margin-top: 14px;
+}
+
+header .logo {
+    float: left;
+    height: 50px;
+    line-height: 0;
+    margin: 0 15px 0 8px;
+    overflow: hidden;
+    padding: 0;
+}
+
+nav .account {
+    color: #999999;
+    float: right;
+    font-size: 11px;
+    padding: 5px 8px 3px;
+    position: relative;
+    text-align: right;
+}
+
+header nav .menu, header nav .account {
+    margin: 12px 0 0;
+}
+
+
+nav.main {
+    height: 50px;
+    position: relative;
+    z-index: 1000;
+}
+
+header {
+    overflow: visible;
+}
+
+.main {
+    clear: both;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 960px;
+}
+
+nav .menu {
+    float: left;
+    font-family: 'PillGothic600mgBold';
+    font-size: 13px;
+    list-style: none outside none;
+    padding: 0;
+}
+
+nav .menu li {
+    color: #ECECEC;
+    float: left;
+    font-size: 13px;
+    list-style: none outside none;
+    margin: 0 3px;
+    padding: 0;
+    text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.85);
+    text-transform: uppercase;
+}
+
+nav .menu li a {
+    color: #EEEEEE;
+    display: inline-block;
+    padding: 4px 8px 3px;
+    text-decoration: none;
+}
+
+// Grabcad site styles - End
