@@ -22,6 +22,9 @@
 				Wow! it seems there is nothing related to that value in our library, try again something else
 				<% end %>
 			</div>
+			<div class="book_sort">
+				Sort by <a href="/library/sort?type=author">Author</a> or <a href="/library/sort?type=title">Title</a>
+			</div>
 			<ul class="books_list">
 				<%
 				if @array_length > 0
@@ -35,9 +38,8 @@
 						<span class="book_description"><%= book.description %></span>
 					</div>
 				</li>
-				<% end 
+				<% end
 				end %>
-				
 			</ul>
 		</div>
 	</body>

@@ -3,6 +3,7 @@ GCMediaLib::Application.routes.draw do
   get "library/get_all"
 
   get "library/search"
+  get "library/sort"
   root :to => "library#index"
   
   # The priority is based upon order of creation:

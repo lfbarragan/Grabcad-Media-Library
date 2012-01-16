@@ -3,21 +3,25 @@
 		<title>Books library - All books</title>
 	</head>
 	<body>
-		<h1>Books library - All books</h1>
+		<h1><a href="/"> Books library</a> - Search result</h1>
 		<div class="book_search">
 			<form method="get" action="/library/search" accept-charset="UTF-8">
 				<div class="search book_search">
 					<input type="text" size="30" placeholder="Search" name="query" id="searchField" class="searchField">
 					<button type="submit" class="search"></button>
 				</div>
-			</form>			
+			</form>
 		</div>
 		<div class="book_sort">
-			Sort by <a href="library/sort?type=author">Author</a> or <a href="library/sort?type=title">Title</a>
-		</div>
+			Sort by <a href="/library/sort?type=author"><% if @type == 'author' %><span class="selected">Author</span><% else %>Author<% end %></a> or 
+			<a href="/library/sort?type=title"><% if @type == 'title' %><span class="selected">Title</span><% else %>Title<% end %></a>
+		</div>		
 		<div id="books_table">
 			<ul class="books_list">
-				<% @books.each do |book| %>
+				<%
+				if @books.size > 0
+				@books.each do |book|
+				%>
 				<li class="book_list_item">
 					<div id="book_block">
 						<img src="<%= book.image_url%>" >
@@ -26,7 +30,9 @@
 						<span class="book_description"><%= book.description %></span>
 					</div>
 				</li>
-				<% end%>
+				<% end 
+				end %>
+				
 			</ul>
 		</div>
 	</body>
